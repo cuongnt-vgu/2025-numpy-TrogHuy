@@ -141,8 +141,8 @@ first_order_diff_padded = np.vstack(
     (first_order_diff, np.zeros((1, first_order_diff.shape[1])))
 )
 # 5. Create a missing flag.
-missing_flag = np.isnan(data_with_nan).astype(int)
-# 6. Stack features into a final matrix.
+
+# 6. Stack features into a final matrix.missing_flag = np.isnan(data_with_nan).astype(int)
 q20_sol = np.array([[ 1.0e+00,  1.0e+01,  1.0e+02,  1.0e+00,  1.0e+01,  1.0e+02,
          0.0e+00,  0.0e+00,  0.0e+00],
        [ 2.0e+00,  2.0e+01,  2.0e+02,  1.0e+00,  1.0e+01,  9.8e+03,
